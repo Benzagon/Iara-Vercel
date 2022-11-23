@@ -59,9 +59,9 @@ const HomePage = () => {
             </ul>
           </div>
 
-          <div class="nav__button">
+          {/* <div class="nav__button">
             <button onClick={() => navigate('/login')} type="submit" class="cyanBtn">Iniciar Sesión</button>
-          </div>
+          </div> */}
         </nav>
       </header>
       <section id="hero"class="hero">
@@ -79,10 +79,10 @@ const HomePage = () => {
               Mejora la precisión de tus diagnósticos de manera<br></br>totalmente  
               <span class="hero__gratuitatxt"> gratuita</span>
             </p>
-            <br></br>
-            <div class="hero__buttons">
+            {/* <br></br> */}
+            {/* <div class="hero__buttons">
                 <button  onClick={() => navigate('/login')} type="submit" class="transparantBtn" >Comienza ahora</button>
-            </div>
+            </div> */}
         </div>
       </section>
       <section id="por_que_iara_cards"className="cards">
@@ -228,35 +228,32 @@ const HomePage = () => {
       </section>
       <section id="comenzar"className='comenzar_sec'>
         <img className="comenzar_sec__bg" src={man_with_rx} alt="man_with_rx"></img>
-        <div className="comenzar_sec__content">
+        {/* <div className="comenzar_sec__content">
           <h2>¿Listo para comenzar?</h2><br></br>
           <button  onClick={() => navigate('/login')} type="submit" class="transparantBtn" >
             Comenzar
           </button>
-        </div>
+        </div> */}
       </section>
       <footer id="footer" className='landing_footer'>
         <div className="landing_footer__logos">
           <ul>
             <li><img src={logo_maimonides} alt="logo_maimonides" /></li>
             <li><img src={logo_ort} alt="logo_ort" /></li>
-            <li><img src={logo_muniz} alt="logo_muniz" /></li>
           </ul>
         </div>
         <section className="under_footer">
 
           <div className="under_footer__links">
             <a href="" className="link_footer">Términos y condiciones</a > <span className="link_footer"> | </span> <a href="" className="link_footer" >Políticas de privacidad</a>
-            <br />
-            <span>Copyright © IARA 2022. All Rights Reserved.</span>
           </div>
-          <div className="under_footer__social">
+          {/* <div className="under_footer__social">
             <ul>
-              <li><img src={instagram_logo} alt="instagram_logo" /></li>
+              <li><img href="https://www.instagram.com/iara/" target="_blank" src={instagram_logo} alt="instagram_logo" /></li>
               <li><img src={mail_logo} alt="mail_logo" /></li>
               <li><img src={twitter_logo} alt="twitter_logo" /></li>
             </ul>
-          </div>
+          </div> */}
         </section>
       </footer>
     </div>

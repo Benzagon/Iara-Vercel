@@ -24,8 +24,8 @@ import { useNavigate } from 'react-router-dom'
 import elipse from './images/Ellipse.svg'
 
 //Our landing pictures
-import juli_image from './images/juli.jpg'
-import facu_image from './images/facu.jpg'
+import juli_image from './images/juliFIX.jpg'
+import facu_image from './images/facuFIX.jpg'
 import caro_image from './images/caro.jpg'
 import luis_image from './images/luis.jpg'
 import dani_image from './images/dani.jpg'

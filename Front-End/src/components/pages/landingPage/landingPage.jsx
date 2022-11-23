@@ -242,19 +242,23 @@ const HomePage = () => {
             <li><img src={logo_ort} alt="logo_ort" /></li>
           </ul>
         </div>
-        {/* <section className="under_footer">
+        <section className="under_footer">
 
           <div className="under_footer__links">
-            <a href="" className="link_footer">Términos y condiciones</a > <span className="link_footer"> | </span> <a href="" className="link_footer" >Políticas de privacidad</a>
+            <a>iara.detector@gmail.com</a >
           </div>
           <div className="under_footer__social">
             <ul>
-              <li><img href="https://www.instagram.com/iara/" target="_blank" src={instagram_logo} alt="instagram_logo" /></li>
-              <li><img src={mail_logo} alt="mail_logo" /></li>
-              <li><img src={twitter_logo} alt="twitter_logo" /></li>
+              <li>
+                <a href="https://www.instagram.com/iara.detector/">
+                  <img target="_blank" src={instagram_logo} alt="instagram_logo" />
+                </a>
+              </li>
+              {/* <li><img src={mail_logo} alt="mail_logo" /></li> */}
+              {/* <li><img src={twitter_logo} alt="twitter_logo" /></li> */}
             </ul>
           </div>
-        </section> */}
+        </section>
       </footer>
     </div>
   )

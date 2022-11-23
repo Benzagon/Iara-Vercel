@@ -226,15 +226,15 @@ const HomePage = () => {
             </a>
         </div>
       </section>
-      <section id="comenzar"className='comenzar_sec'>
+      {/* <section id="comenzar"className='comenzar_sec'>
         <img className="comenzar_sec__bg" src={man_with_rx} alt="man_with_rx"></img>
-        {/* <div className="comenzar_sec__content">
+        <div className="comenzar_sec__content">
           <h2>¿Listo para comenzar?</h2><br></br>
           <button  onClick={() => navigate('/login')} type="submit" class="transparantBtn" >
             Comenzar
           </button>
-        </div> */}
-      </section>
+        </div>
+      </section> */}
       <footer id="footer" className='landing_footer'>
         <div className="landing_footer__logos">
           <ul>

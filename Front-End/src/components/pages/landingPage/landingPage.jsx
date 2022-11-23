@@ -243,10 +243,10 @@ const HomePage = () => {
           </ul>
         </div>
         <section className="under_footer">
-
-          <div className="under_footer__links">
+          <h1>Contacto</h1>
+          {/* <div className="under_footer__links">
             <a>iara.detector@gmail.com</a >
-          </div>
+          </div> */}
           <div className="under_footer__social">
             <ul>
               <li>
@@ -254,6 +254,7 @@ const HomePage = () => {
                   <img target="_blank" src={instagram_logo} alt="instagram_logo" />
                 </a>
               </li>
+              <li>iara.detector@gmail.com</li>
               {/* <li><img src={mail_logo} alt="mail_logo" /></li> */}
               {/* <li><img src={twitter_logo} alt="twitter_logo" /></li> */}
             </ul>

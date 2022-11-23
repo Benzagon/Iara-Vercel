@@ -15,7 +15,7 @@ import AllPatients from './components/AllPatients';
 import RecentPacients from "./components/RecentPacients";
 import loginContext from "./Context";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import UpdatePassword from "./components/updatePassword";
+import UpdatePassword from "./components/UpdatePassword";
 
 function App() {
   const IaraTheme = createTheme({

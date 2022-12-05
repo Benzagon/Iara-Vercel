@@ -1,0 +1,52 @@
+.landingNav {
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    transition: top 0.7s;
+
+    background-color: $landingBackground;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__right{
+        display: flex;
+        gap: 6vw;
+    }
+
+    &__options {
+        display: flex;
+        gap: 6vw;
+        align-items: center;
+    }
+
+    &__links {
+        display: inline;
+        list-style: none;
+        a {
+            color: white;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-size: 24px;
+            
+            &::after{
+                content: '';
+                width: 0;
+                height: 3px;
+                background-color: $landingButton;
+                margin: auto;
+                display: block;
+                transition: width 0.2s linear;
+            }
+
+            &:hover::after{
+                width: 100%;
+                transition: width 0.2s linear;
+            }
+        }
+    }
+}

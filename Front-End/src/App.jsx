@@ -17,6 +17,9 @@ import loginContext from "./Context";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import UpdatePassword from "./components/UpdatePassword";
 
+//Test new landing
+import LandingPageV2 from "./components/pages/landingPageV2/Landing";
+
 function App() {
   const IaraTheme = createTheme({
     palette: {
@@ -35,11 +38,13 @@ function App() {
       <ThemeProvider theme={IaraTheme}>
         <Routes>
           {/*<Route path="/" element={<Layout />} >*/}
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LandingPageV2 />} />
           <Route path="/logIn" element={<LogInPage />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/forgotPassword" element={<Forgot_password />} />
           <Route path="/updatePassword/:id" element={<UpdatePassword />} />
+
+          <Route path="/landingv2" element={<LandingPageV2 />} />
 
           <Route path="/Home" element={<RecentPacients />} />
           <Route path="/AllPatients" element={<AllPatients />} />

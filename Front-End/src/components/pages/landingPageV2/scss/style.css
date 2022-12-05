@@ -1,0 +1,344 @@
+.land_clearBtn {
+  background: transparent;
+  color: #0B9EA7;
+  border: 3px solid #0B9EA7;
+  border-radius: 15px;
+  transition: 0.25s;
+}
+.land_clearBtn:hover {
+  background-color: #0B9EA7;
+  color: white;
+  transition: 0.25s;
+}
+
+body {
+  height: 70vh;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.landingNav {
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  transition: top 0.7s;
+  background-color: #161526;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.landingNav__right {
+  display: flex;
+  gap: 6vw;
+}
+.landingNav__options {
+  display: flex;
+  gap: 6vw;
+  align-items: center;
+}
+.landingNav__links {
+  display: inline;
+  list-style: none;
+}
+.landingNav__links a {
+  color: white;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-size: 24px;
+}
+.landingNav__links a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #0B9EA7;
+  margin: auto;
+  display: block;
+  transition: width 0.2s linear;
+}
+.landingNav__links a:hover {
+  width: 100%;
+  transition: width 0.2s linear;
+}
+
+.landBody {
+  padding-top: 35vh;
+  padding-left: 9.75vw;
+  padding-right: 9.75vw;
+  padding-bottom: 40vh;
+  display: flex;
+  justify-content: space-between;
+}
+.landBody__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.landBody__title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+}
+.landBody__title_cyan {
+  color: #01ADB4;
+  letter-spacing: 3px;
+}
+.landBody__subtitle {
+  display: inherit;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+}
+.landBody__carrousel {
+  margin: 0;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  height: 2.4rem;
+  overflow: hidden;
+}
+.landBody__carrousel_line:first-child {
+  -webkit-animation: anim 20s infinite;
+          animation: anim 20s infinite;
+}
+
+@-webkit-keyframes anim {
+  0%, 8% {
+    margin-top: 0;
+  }
+  16%, 24% {
+    margin-top: -2.3rem;
+  }
+  33%, 41% {
+    margin-top: -4.7rem;
+  }
+  50%, 58% {
+    margin-top: -7.1rem;
+  }
+  66%, 74% {
+    margin-top: -4.7rem;
+  }
+  82%, 90% {
+    margin-top: -2.3rem;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes anim {
+  0%, 8% {
+    margin-top: 0;
+  }
+  16%, 24% {
+    margin-top: -2.3rem;
+  }
+  33%, 41% {
+    margin-top: -4.7rem;
+  }
+  50%, 58% {
+    margin-top: -7.1rem;
+  }
+  66%, 74% {
+    margin-top: -4.7rem;
+  }
+  82%, 90% {
+    margin-top: -2.3rem;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.whatDo__body {
+  margin: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.whatDo__body_left {
+  text-align: left;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+.whatDo__body_left_title {
+  font-size: 90px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.whatDo__body h3 {
+  font-size: 30px;
+  color: #AEAEAE;
+}
+
+.features {
+  padding-top: 150px;
+  width: 100%;
+  height: 1100px;
+  background-image: url("../images/landing_wave_design.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left;
+}
+.features__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2vh;
+}
+.features__title h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+}
+.features__title h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #AEAEAE;
+  width: 27vw;
+}
+.features__cards {
+  margin-top: 10vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7vw;
+}
+.features__cards_card {
+  height: 45vh;
+  width: 22.5vw;
+  border-radius: 17px;
+  background: linear-gradient(#0B9EA7 50%, #0B9EA7, #161526, #161526 50%);
+  background-color: #161526;
+  background-size: 100% 17.5%;
+  background-repeat: no-repeat, no-repeat;
+  transition: background 0.75s;
+  padding-top: 6vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 2vh;
+}
+.features__cards_card:hover {
+  background-size: 100% 200%;
+  cursor: default;
+}
+.features__cards_card h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+.features__cards_card h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(closest-side, #0B9EA7 -300%, #161526 100%);
+}
+.team__cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 7.75vw;
+       column-gap: 7.75vw;
+  row-gap: 1vh;
+  padding-bottom: 30vh;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.team__card_img {
+  display: grid;
+  position: relative;
+}
+.team__card_img_top {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+.team__card_img_bot {
+  align-self: flex-end;
+  grid-column: 1;
+  grid-row: 1;
+  padding-bottom: 1px;
+}
+.team__card_text h3 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #0B9EA7;
+}
+
+.colab__logos {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: #131220;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer h2 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 39px;
+}
+.footer .footer__about {
+  display: flex;
+  align-items: flex-start;
+  gap: 10vw;
+}
+.footer__logo {
+  display: flex;
+  gap: 5vw;
+}
+.footer__line {
+  width: 2px;
+  height: 40vh;
+  background-color: #3C3C53;
+}/*# sourceMappingURL=style.css.map */

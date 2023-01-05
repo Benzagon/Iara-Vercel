@@ -20,6 +20,7 @@ html {
   background-color: $landingBackground;
   scroll-behavior:smooth;
   overflow-x: hidden;
+  
   //Scrollbar
   body::-webkit-scrollbar {
       width: 8px; 
@@ -117,6 +118,10 @@ button, .button {
   }
 }
 
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
 //Visibility
 .hide-for-mobile {
   @media(max-width: 63.9375em){

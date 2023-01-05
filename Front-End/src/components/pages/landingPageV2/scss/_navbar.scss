@@ -2,16 +2,23 @@
     top: 0;
     position: fixed;
     z-index: 2;
-    width: 100%;
+    width: 100vw;
     transition: top 0.7s;
 
     background-color: $landingBackground;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    //Mobile
+    @media(max-width: 63.9375em){
+        justify-content: space-between;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 
     &__right{
         display: flex;
@@ -50,6 +57,30 @@
         }
         @media(max-width: 63.9375em){
             display: none;
-          }
+        }
+    }
+
+    &__hamburger{
+        display: block;
+        height: 23px;
+        width: 35px;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-line{
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: white;
+        }
+
+        @media(min-width: 63.9375em){
+            display: none;
+        }
     }
 }

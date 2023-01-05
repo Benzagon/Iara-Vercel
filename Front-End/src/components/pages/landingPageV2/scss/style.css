@@ -103,6 +103,11 @@ button, .button {
   background-position: center;
 }
 
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -113,14 +118,21 @@ button, .button {
   top: 0;
   position: fixed;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
   transition: top 0.7s;
   background-color: #161526;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 63.9375em) {
+  .landingNav {
+    justify-content: space-between;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
 }
 .landingNav__right {
   display: flex;
@@ -159,6 +171,29 @@ button, .button {
     display: none;
   }
 }
+.landingNav__hamburger {
+  display: block;
+  height: 23px;
+  width: 35px;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.landingNav__hamburger-line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+}
+@media (min-width: 63.9375em) {
+  .landingNav__hamburger {
+    display: none;
+  }
+}
 
 .landBody {
   padding-top: 35vh;
@@ -193,6 +228,7 @@ button, .button {
 @media (max-width: 1023px) {
   .landBody__title {
     font-size: 40px;
+    width: 100vw;
   }
 }
 .landBody__title_cyan {
@@ -211,6 +247,11 @@ button, .button {
     font-size: 20px;
   }
 }
+@media (max-width: 63.9375em) {
+  .landBody__subtitle {
+    display: none;
+  }
+}
 .landBody__carrousel {
   margin: 0;
   font-weight: 700;
@@ -222,6 +263,11 @@ button, .button {
 @media (max-width: 1023px) {
   .landBody__carrousel {
     text-align: left;
+  }
+}
+@media (max-width: 63.9375em) {
+  .landBody__carrousel {
+    display: none;
   }
 }
 .landBody__carrousel_line:first-child {
@@ -293,9 +339,20 @@ button, .button {
   line-height: 110%;
   margin-bottom: 20px;
 }
+@media (max-width: 63.9375em) {
+  .whatDo__body_left_title {
+    font-size: 40px;
+    margin-top: 5vh;
+  }
+}
 .whatDo__body h3 {
   font-size: 30px;
   color: #AEAEAE;
+}
+@media (max-width: 63.9375em) {
+  .whatDo__body h3 {
+    font-size: 20px;
+  }
 }
 
 .features {
@@ -320,6 +377,12 @@ button, .button {
   font-weight: 700;
   font-size: 65px;
 }
+@media (max-width: 63.9375em) {
+  .features__title h1 {
+    font-size: 40px;
+    width: 90vw;
+  }
+}
 .features__title h3 {
   font-family: "DM Sans";
   font-style: normal;
@@ -328,12 +391,25 @@ button, .button {
   color: #AEAEAE;
   width: 27vw;
 }
+@media (max-width: 63.9375em) {
+  .features__title h3 {
+    font-size: 20px;
+    width: 90vw;
+  }
+}
 .features__cards {
   margin-top: 140px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 7vw;
+}
+@media (max-width: 63.9375em) {
+  .features__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;
+  }
 }
 .features__cards_card {
   height: 465px;
@@ -345,13 +421,19 @@ button, .button {
   background-repeat: no-repeat, no-repeat;
   transition: background 0.75s;
   padding-top: 6vh;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
   gap: 2vh;
+}
+@media (max-width: 63.9375em) {
+  .features__cards_card {
+    height: 380px;
+    width: 320px;
+  }
 }
 .features__cards_card:hover {
   background-size: 100% 200%;
@@ -369,6 +451,11 @@ button, .button {
   font-weight: 400;
   font-size: 20px;
   color: #FFFFFF;
+}
+@media (max-width: 63.9375em) {
+  .features__cards_card h3 {
+    font-size: 18px;
+  }
 }
 
 .team {
@@ -431,6 +518,7 @@ button, .button {
 .footer {
   background-color: #131220;
   height: 60vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -441,18 +529,4 @@ button, .button {
   font-weight: 700;
   font-size: 25px;
   line-height: 39px;
-}
-.footer .footer__about {
-  display: flex;
-  align-items: flex-start;
-  gap: 10vw;
-}
-.footer__logo {
-  display: flex;
-  gap: 5vw;
-}
-.footer__line {
-  width: 2px;
-  height: 40vh;
-  background-color: #3C3C53;
 }/*# sourceMappingURL=style.css.map */

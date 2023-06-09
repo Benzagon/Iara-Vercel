@@ -107,6 +107,11 @@ button, .button {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 63.9375em) {
+  .responsive-image {
+    max-width: 90%;
+  }
+}
 
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
@@ -271,32 +276,7 @@ button, .button {
   }
 }
 .landBody__carrousel_line:first-child {
-  -webkit-animation: anim 20s infinite;
-          animation: anim 20s infinite;
-}
-
-@-webkit-keyframes anim {
-  0%, 8% {
-    margin-top: 0;
-  }
-  16%, 24% {
-    margin-top: -2.3rem;
-  }
-  33%, 41% {
-    margin-top: -4.7rem;
-  }
-  50%, 58% {
-    margin-top: -7.1rem;
-  }
-  66%, 74% {
-    margin-top: -4.7rem;
-  }
-  82%, 90% {
-    margin-top: -2.3rem;
-  }
-  100% {
-    margin-top: 0;
-  }
+  animation: anim 20s infinite;
 }
 
 @keyframes anim {
@@ -403,6 +383,11 @@ button, .button {
   align-items: flex-start;
   justify-content: center;
   gap: 7vw;
+}
+@media (max-width: 99.375em) {
+  .features__cards {
+    gap: 3vw;
+  }
 }
 @media (max-width: 63.9375em) {
   .features__cards {
@@ -514,6 +499,21 @@ button, .button {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 63.9375em) {
+  .colab__logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15vh;
+  }
+}
+.colab__logos_tic {
+  padding-left: 5vw;
+}
+@media (max-width: 63.9375em) {
+  .colab__logos_tic {
+    padding-top: 4vh;
+  }
+}
 
 .footer {
   background-color: #131220;
@@ -523,10 +523,19 @@ button, .button {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 63.9375em) {
+  .footer {
+    flex-direction: column;
+  }
+}
 .footer h2 {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 39px;
+}
+.footer a {
+  color: #00858b;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

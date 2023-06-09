@@ -18,7 +18,7 @@ const Landing = () => {
             <MainBody></MainBody>
             <WhatDoesIara></WhatDoesIara>
             <Features></Features>
-            <Team></Team>
+            {/* <Team></Team> */}
             <Collaboration></Collaboration>
             <Footer></Footer>
         </>

@@ -9,6 +9,12 @@ const Footer = () => {
                 <img src={logo_text} alt="IARA" />
                 <span className="footer__line"></span>
             </div>
+            <div>
+                <h1>Contact</h1>
+                <h2>
+                    <a className="" href="mailto:hello@iara.ar">hello@iara.ar</a>
+                </h2>
+            </div>
             {/* <div className="footer__about">
                 <h2>About</h2>
                 <h2>Accesibility</h2>

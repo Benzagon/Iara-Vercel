@@ -21,10 +21,10 @@ const MainBody = () => {
                             <span className="landBody__carrousel_line"> completely free of charge</span>
                             <span className="landBody__carrousel_line"> with just a click</span>
                             <span className="landBody__carrousel_line"> through artificial intelligence</span>
-                            <span className="landBody__carrousel_line"> and step into the future</span>
+                            <span className="landBody__carrousel_line"> with real-time data analysis</span>
                         </div>
                     </h3>
-                    <button className="land_clearBtn hide-for-mobile">Start Now</button>
+                    {/* <button className="land_clearBtn hide-for-mobile">Start Now</button> */}
                 </div>
 
                 {/* <div className="landBody__right">

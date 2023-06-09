@@ -43,21 +43,21 @@ const Collaboration = () => {
     return (
         <motion.div className="colab" variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:true}}>
             <motion.div className="features__title" variants={title}>
-                <h1>In collaboration with</h1>
-                <h3>
+                <h1>In <span className="landBody__title_cyan">collaboration </span>with</h1>
+                {/* <h3>
                     These organizations helped develop IARA.
                     Without them, it wouldn't have been possible.
-                </h3>
+                </h3> */}
             </motion.div>
 
             <motion.div className="colab__logos">
-                <motion.div variants={item}>
-                    <img src={logo_tic} alt="TIC logo" className="responsive-image"/>
-                </motion.div>
-
                <motion.div variants={item}>
                     <img src={logo_ort} alt="ORT logo" className="responsive-image"/>
                </motion.div>
+
+               <motion.div variants={item}>
+                    <img src={logo_tic} alt="TIC logo" className="responsive-image colab__logos_tic"/>
+                </motion.div>
 
                <motion.div variants={item}>
                     <img src={logo_umai}  alt="UMAI logo" className="responsive-image"/>

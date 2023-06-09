@@ -66,12 +66,12 @@ const LandingNav = () => {
                 <div className="landingNav__right">
                     <ul className="landingNav__options">
                         <motion.li variants={header} className='landingNav__links'><a href="#home">Home</a></motion.li>
-                        <motion.li variants={header} className='landingNav__links'><a href="#why">Why Iara?</a></motion.li>
+                        <motion.li variants={header} className='landingNav__links'><a href="#why">Why Iara</a></motion.li>
                         <motion.li variants={header} className='landingNav__links'><a href="#team">About us</a></motion.li>
                         <motion.li variants={header} className='landingNav__links'><a href="#contact">Get in touch</a></motion.li>
                     </ul>
                     <motion.div className="hide-for-mobile" variants={header}>
-                        <button className="land_clearBtn">Get Started</button>
+                        <h2 className="landingNav__links">Coming <span className="iara_cyan">soon</span></h2>
                     </motion.div>
 
                     <div class="landingNav__hamburger">

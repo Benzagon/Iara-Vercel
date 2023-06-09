@@ -51,6 +51,10 @@
         align-items: flex-start;
         justify-content: center;
         gap: 7vw;
+
+        @media(max-width: 99.375em){
+            gap: 3vw;
+        }
         
         //Mobile
         @media(max-width: 63.9375em){

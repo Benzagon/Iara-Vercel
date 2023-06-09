@@ -7,12 +7,21 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @media(max-width: 63.9375em){
+        flex-direction: column;
+    }
+
     h2 {
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
         line-height: 39px;
+    }
+
+    a {
+        color: $cyan;
+        text-decoration: underline;
     }
 
     // .footer__about {
